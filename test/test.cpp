@@ -1,6 +1,15 @@
-#include <iostream>
+#include <gtest/gtest.h>
 
-int main()
+TEST(MyTestSuite, Test1)
 {
-    std::cout << "Testing\n";
+    ASSERT_EQ(2 + 2, 4);
+}
+
+int main(int argc, char **argv)
+{
+    // Initialize GoogleTest
+    ::testing::InitGoogleTest(&argc, argv);
+
+    // Run all tests
+    return RUN_ALL_TESTS();
 }
