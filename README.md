@@ -7,4 +7,10 @@ conan install . --build=missing
 conan build . -pr conan/profile
 ```
 
+# TODOs
 
+- [ ] Build and test in CI
+- [ ] Is test-approach idiomatic?
+- [ ] Learn more about constexpr
+- [ ] Build new version of package
+- [x] Switch to Ninja

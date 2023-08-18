@@ -2,8 +2,6 @@
 
 #include "do-stuff.hpp"
 
-// TODO: Learn about constexpr
-
 TEST(DoStuff, InitPeripheralsReturnsNoError)
 {
     // GIVEN

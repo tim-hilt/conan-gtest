@@ -2,9 +2,6 @@
   "configurations": [
     {
       "name": "default",
-      // "defines": [
-      //     "CAPABILITY_ETHERNET"
-      // ],
       "macFrameworkPath": ["/System/Library/Frameworks", "/Library/Frameworks"],
       "intelliSenseMode": "macos-clang-x64",
       "compilerPath": "/usr/bin/clang",
