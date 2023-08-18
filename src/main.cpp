@@ -1,7 +1,8 @@
-#include <iostream>
+#include "do-stuff.hpp"
 
 int main()
 {
-    std::cout << "Hi\n";
-    return 0;
+    DoStuff instance{};
+    instance.initPeripherals();
+    instance.initEthernet();
 }

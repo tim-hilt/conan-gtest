@@ -1,5 +1,6 @@
-from conan import ConanFile
 from conan.tools.cmake import CMake, CMakeDeps, CMakeToolchain, cmake_layout
+
+from conan import ConanFile
 
 
 class conan_gtestRecipe(ConanFile):
@@ -21,6 +22,9 @@ class conan_gtestRecipe(ConanFile):
 
     def layout(self):
         cmake_layout(self)
+
+    def requirements(self):
+        self.requires("gtest/cci.20210126")
 
     def generate(self):
         deps = CMakeDeps(self)

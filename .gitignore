@@ -1,3 +1,5 @@
 conanbuild*
 conanrun*
 deactivate*
+build/
+CMakeUserPresets.json
