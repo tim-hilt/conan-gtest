@@ -24,7 +24,7 @@ class conan_gtestRecipe(ConanFile):
         cmake_layout(self)
 
     def requirements(self):
-        self.requires("gtest/cci.20210126")
+        self.requires("gtest/1.14.0")
 
     def generate(self):
         deps = CMakeDeps(self)
