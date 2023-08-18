@@ -12,5 +12,5 @@ conan build . -pr conan/profile
 - [ ] Build and test in CI
 - [ ] Is test-approach idiomatic?
 - [ ] Learn more about constexpr
-- [ ] Build new version of package
+- [ ] Build new version of package (and find out how to do it cleanly with Conan)
 - [x] Switch to Ninja
