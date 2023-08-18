@@ -4,16 +4,15 @@
 
 DoStuff::DoStuff()
 {
-    std::cout << "constructor\n";
 }
 
-void DoStuff::initPeripherals()
+uint8_t DoStuff::initPeripherals() const
 {
-    std::cout << "init peripherals\n";
+    return 0;
 }
 
 #ifdef CAPABILITY_ETHERNET
-void DoStuff::initEthernet()
+void DoStuff::initEthernet() const
 {
     std::cout << "doing ethernet stuff\n";
 }

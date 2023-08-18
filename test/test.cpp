@@ -1,15 +1,18 @@
 #include <gtest/gtest.h>
 
-TEST(MyTestSuite, Test1)
-{
-    ASSERT_EQ(2 + 2, 4);
-}
+#include "do-stuff.hpp"
 
-int main(int argc, char **argv)
-{
-    // Initialize GoogleTest
-    ::testing::InitGoogleTest(&argc, argv);
+// TODO: Learn about constexpr
 
-    // Run all tests
-    return RUN_ALL_TESTS();
+TEST(DoStuff, InitPeripheralsReturnsNoError)
+{
+    // GIVEN
+    const DoStuff instance{};
+    const uint8_t expectedValue{0};
+
+    // WHEN
+    const uint8_t actualValue{instance.initPeripherals()};
+
+    // THEN
+    ASSERT_EQ(expectedValue, actualValue);
 }
