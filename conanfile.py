@@ -1,5 +1,5 @@
 from conan import ConanFile
-from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
+from conan.tools.cmake import CMake, CMakeDeps, CMakeToolchain, cmake_layout
 
 
 class conan_gtestRecipe(ConanFile):
@@ -7,12 +7,11 @@ class conan_gtestRecipe(ConanFile):
     version = "1.0.0"
     package_type = "application"
 
-    # Optional metadata
-    license = "<Put the package license here>"
-    author = "<Put your name here> <And your email here>"
-    url = "<Package recipe repository url here, for issues about the package>"
-    description = "<Description of conan-gtest package here>"
-    topics = ("<Put some tag here>", "<here>", "<and here>")
+    license = "MIT"
+    author = "Tim Hilt timhilt@live.de"
+    url = "https://github.com/tim-hilt/conan-gtest"
+    description = "POC on how to integrate Google Test"
+    topics = ("unit-testing")
 
     # Binary configuration
     settings = "os", "compiler", "build_type", "arch"
@@ -37,7 +36,3 @@ class conan_gtestRecipe(ConanFile):
     def package(self):
         cmake = CMake(self)
         cmake.install()
-
-    
-
-    
