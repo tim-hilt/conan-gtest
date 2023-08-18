@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 project(conan-gtest CXX)
 
-add_compile_definitions(CAPABILITY_ETHERNET)
-
 add_executable(conan-gtest src/main.cpp src/do-stuff.cpp)
 
 # TODO: Is there a better approach to testing in C++?
