@@ -23,7 +23,7 @@ class conan_gtestRecipe(ConanFile):
     def layout(self):
         cmake_layout(self)
 
-    def requirements(self):
+    def build_requirements(self):
         self.requires("gtest/1.14.0")
 
     def generate(self):
